@@ -7,14 +7,16 @@ class Node:
 
 
 # Pre-order traversal
-def pre_order(node):
-    return []
+def pre_order(node: Node) -> list:
+    if node is None:
+        return []
+    return [node.data]+pre_order(node.left)+pre_order(node.right)
 
 # In-order traversal
-def in_order(node):
+def in_order(node: Node) -> list:
     return []
 
 # Post-order traversal
-def post_order(node):
+def post_order(node: Node) -> list:
     return []
 
